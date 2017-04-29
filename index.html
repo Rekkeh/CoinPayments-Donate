@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Donate using CP</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body style="background-color: aliceblue;">
+		<div class="container">
+			<center>
+				<h1>Donate using CoinPayments.net</h1>
+				<br/>
+				<form action="https://www.coinpayments.net/index.php" method="post">
+					<input type="hidden" name="cmd" value="_pay">
+					<input type="hidden" name="reset" value="1">
+					<input type="hidden" name="want_shipping" value="0">
+					<input type="hidden" name="merchant" value="606a89bb575311badf510a4a8b79a45e">
+					<input type="hidden" name="currency" value="USD">
+					<label>Amount:</label>
+					<input type="number" name="amountf" value="5" class="form-control" style="width:250px;" required> USD<br/>
+					<input type="hidden" name="item_name" value="Donation">
+					<input type="image" src="https://www.coinpayments.net/images/pub/donate.png" height="75px" alt="Donate with CoinPayments.net">
+				</form>
+			</center>
+		</div>
+	<br/>
+	<footer>
+		<center>
+			<p>Developed by <a href="https://github.com/legorek">Rekkeh</a></p>
+		</center>
+	</footer>
+	</body>
+</html>
